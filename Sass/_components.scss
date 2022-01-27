@@ -1,0 +1,49 @@
+// container
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  /* medium screens */
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  /* larg screens */
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+// the main buttons style
+.main-button {
+  border-radius: 100px;
+  border: none;
+  padding: 15px 30px;
+  margin: 5px;
+  letter-spacing: 1px;
+  transition: $main-transtion;
+  color: $CTA-text-color;
+  cursor: pointer;
+  font: {
+    weight: 700;
+    size: 16px;
+  }
+  &.normal-hover {
+    &:hover {
+      background-color: $CTA-hover-background-color;
+      color: $text-color;
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 13px 20px;
+  }
+}
+.drop-down-btn {
+  cursor: pointer;
+  ul {
+    display: none;
+  }
+  &.show ul {
+    display: block;
+  }
+}
